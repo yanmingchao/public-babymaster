@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:include="include/admin/adminHeader::html('关于本站')" ></head>
+
+<body class="hold-transition skin-blue  layout-boxed">
+
+<script>
+    $(function(){
+    });
+</script>
+
+
+<div class="wrapper" id="workingArea">
+  <div th:replace="include/admin/adminNavigator::html" ></div>
+  <div th:replace="include/admin/adminSidebar::html" ></div>
+
+
+  <div class="content-wrapper">
+    <section class="content-header">
+      <h1>
+        	关于本站
+      </h1>
+    </section>
+
+    <section class="content">
+		<div class="row">
+	        <div class="col-xs-12">
+	          <div class="box">
+	            <div class="box-header">
+
+	            </div>
+	            <div class="box-body table-responsive no-padding">
+	              
+	             <div style="padding:15px">
+					 <p><a class="aaa" href="http://www.baidu.com">张三看百度新闻</a></p>
+					 <p><a class="aaa" href="http://www.taobao.com">张三看阿里新闻</a></p>
+					 <p><a class="aaa" href="http://www.sina.com">张三看新浪新闻</a></p>
+					 <p><a class="aaa" href="http://www.QQ.com">张三看QQ新闻</a></p>
+	             </div>
+	              
+	              
+	            </div>
+	          </div>
+
+			<!--	<p><a class="aaa" href="http://www.jd.com">张三看京东新闻</a></p>-->
+	        </div>
+
+	      </div>
+	      
+    </section>
+  </div>
+ 	<div th:replace="include/admin/adminFooter::html" ></div>
+</div>
+</body>
+</html>
